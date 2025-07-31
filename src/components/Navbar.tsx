@@ -20,8 +20,8 @@ const Navbar = () => {
   return (
     <div className="navbar py-7 flex items-center justify-between">
       <div className="logo">
-        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent md:text-white">
-          Portoflio
+        <h1 className="text-3xl font-bold bg-white rounded-2xl p-2 text-black md:bg-transparent md:text-white">
+          KopiK021
         </h1>
       </div>
       <ul
@@ -35,12 +35,17 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#tentang" className="sm:text-lg text-base font-medium">
-            Tentang
+            Tentang Kami
           </a>
         </li>
         <li>
-          <a href="#proyek" className="sm:text-lg text-base font-medium">
-            Proyek
+          <a href="#menu" className="sm:text-lg text-base font-medium">
+            Produk
+          </a>
+        </li>
+        <li>
+          <a href="#lokasi" className="sm:text-lg text-base font-medium">
+            Lokasi
           </a>
         </li>
         <li>

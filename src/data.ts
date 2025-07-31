@@ -1,173 +1,228 @@
-import HeroImage from "/assets/ronker.png";
+// ============================
+// 📁 Aset Gambar
+// ============================
+const Hero1 = "/assets/hero/hero1.webp";
+const Hero2 = "/assets/hero/hero2.webp";
+const Hero3 = "/assets/hero/hero3.webp";
+const Hero4 = "/assets/hero/hero4.webp";
+const Hero5 = "/assets/hero/hero5.webp";
+const Hero6 = "/assets/hero/hero6.webp";
+const Hero7 = "/assets/hero/hero7.webp";
+const Hero8 = "/assets/hero/hero8.webp";
+const Hero9 = "/assets/hero/hero9.webp";
+const Hero10 = "/assets/hero/hero10.webp";
+const Hero11= "/assets/hero/hero11.webp";
+// langsung string path
 
-const Image = {
-  HeroImage,
-};
 
-export interface Tool {
+import Menu1 from "/assets/menu/menu1.png";
+import Menu2 from "/assets/menu/menu2.png";
+import Menu3 from "/assets/menu/menu3.png";
+import Menu4 from "/assets/menu/menu4.png";
+import Menu5 from "/assets/menu/menu5.png";
+import Menu6 from "/assets/menu/menu6.png";
+import Menu7 from "/assets/menu/menu7.png";
+import Menu8 from "/assets/menu/menu8.png";
+import Menu9 from "/assets/menu/menu9.png";
+import Menu10 from "/assets/menu/menu10.png";
+import Menu11 from "/assets/menu/menu11.png";
+import Menu12 from "/assets/menu/menu12.png";
+import Menu13 from "/assets/menu/menu13.svg";
+
+// ============================
+// 📄 Interface
+// ============================
+export interface HeroSlide {
   id: number;
-  gambar: string;
-  nama: string;
-  ket: string;
-  dad: string;
+  image: string;
+  title: string;
+  subtitle: string;
 }
 
-export interface Proyek {
+export interface MenuItem {
   id: number;
-  gambar: string;
-  nama: string;
-  desk: string;
-  tools: string[];
-  dad: string;
+  image: string;
+  name: string;
+  description: string;
+  price: string;
 }
 
-export default Image;
-
-import Tools1 from "/assets/tools/vscode.png";
-import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/codeigniter.svg";
-import Tools4 from "/assets/tools/tailwind.png";
-import Tools5 from "/assets/tools/bootstrap.png";
-import Tools6 from "/assets/tools/js.png";
-import Tools7 from "/assets/tools/nodejs.png";
-import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
-import Tools10 from "/assets/tools/canva.png";
-import Tools11 from "/assets/tools/figma.png";
-import Tools12 from "/assets/tools/xampp.webp";
-
-export const listTools: Tool[] = [
+// ============================
+// 🎞 Hero Slider
+// ============================
+export const heroSlides: HeroSlide[] = [
   {
     id: 1,
-    gambar: Tools1,
-    nama: "Visual Studio Code",
-    ket: "Code Editor",
-    dad: "100",
+    image: Hero1,
+    // image: "/assets/hero/hero1.webp",
+    title: "Kopi Nusantara",
+    subtitle: "Rasa otentik dari biji kopi lokal terbaik",
   },
   {
     id: 2,
-    gambar: Tools2,
-    nama: "React JS",
-    ket: "Framework",
-    dad: "200",
+    image: Hero2,
+    // image: "/assets/hero/hero2.webp",
+    title: "Cita Rasa Kopi Asli",
+    subtitle: "Temukan kenikmatan dalam setiap tegukan",
   },
   {
     id: 3,
-    gambar: Tools3,
-    nama: "CodeIgniter",
-    ket: "Framework",
-    dad: "300",
+    image: Hero3,
+    // image: "/assets/hero/hero3.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 4,
-    gambar: Tools4,
-    nama: "Tailwind CSS",
-    ket: "Framework",
-    dad: "400",
+    image: Hero4,
+    // image: "/assets/hero/hero4.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 5,
-    gambar: Tools5,
-    nama: "Bootstrap",
-    ket: "Framework",
-    dad: "500",
+    image: Hero5,
+    // image: "/assets/hero/hero5.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 6,
-    gambar: Tools6,
-    nama: "Javascript",
-    ket: "Language",
-    dad: "600",
+    image: Hero6,
+    // image: "/assets/hero/hero6.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 7,
-    gambar: Tools7,
-    nama: "Node JS",
-    ket: "Javascript Runtime",
-    dad: "700",
+    image: Hero7,
+    // image: "/assets/hero/hero7.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 8,
-    gambar: Tools8,
-    nama: "Github",
-    ket: "Repository",
-    dad: "800",
+    image: Hero8,
+    // image: "/assets/hero/hero8.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 9,
-    gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
-    dad: "900",
+    image: Hero9,
+    // image: "/assets/hero/hero9.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 10,
-    gambar: Tools10,
-    nama: "Canva",
-    ket: "Design App",
-    dad: "1000",
+    image: Hero10,
+    // image: "/assets/hero/hero10.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
   {
     id: 11,
-    gambar: Tools11,
-    nama: "Figma",
-    ket: "Design App",
-    dad: "1100",
-  },
-  {
-    id: 12,
-    gambar: Tools12,
-    nama: "Xampp",
-    ket: "Database Management",
-    dad: "1100",
+    image: Hero11,
+    // image: "/assets/hero/hero11.webp",
+    title: "Aroma yang Membekas",
+    subtitle: "Kopi kami, semangat harimu",
   },
 ];
 
-import Proyek1 from "/assets/proyek/project1.webp";
-import Proyek2 from "/assets/proyek/project2.webp";
-import Proyek3 from "/assets/proyek/project3.webp";
-import Proyek4 from "/assets/proyek/project4.webp";
-import Proyek5 from "/assets/proyek/project5.webp";
-
-export const listProyek: Proyek[] = [
+// ============================
+// ☕ Menu Produk
+// ============================
+export const menuItems: MenuItem[] = [
   {
     id: 1,
-    gambar: Proyek1,
-    nama: "Aplikasi Kalkulator WEB",
-    desk: "Tugas Kuliah Membangun Aplikasi WEB Calculator",
-    tools: ["HTML", "CSS", "Javascript"],
-    dad: "200",
+    image: Menu1,
+    name: "Kopi Susu Gula Aren",
+    description: "Perpaduan kopi robusta dan manisnya gula aren",
+    price: "Rp 20.000",
   },
   {
     id: 2,
-    gambar: Proyek2,
-    nama: "GIS Pertanian",
-    desk: "Project Tugas Akhir Kuliah masih dalam tahap Pengembangan",
-    tools: ["HTML", "CSS", "AdminLTE", "PHP", "MySql", "Codeigniter"],
-    dad: "300",
+    image: Menu2,
+    name: "Espresso",
+    description: "Kopi hitam pekat untuk pecinta rasa kuat",
+    price: "Rp 15.000",
   },
   {
     id: 3,
-    gambar: Proyek3,
-    nama: "Web Landing Page Toko Online",
-    desk: "Tugas Kuliah Ujian Akhir Semester 5 Mata Kuliah WEB Programming",
-    tools: ["HTML", "JavaScript", "CSS"],
-    dad: "400",
+    image: Menu3,
+    name: "Cappuccino",
+    description: "Kopi dengan susu dan foam yang lembut",
+    price: "Rp 18.000",
   },
   {
     id: 4,
-    gambar: Proyek4,
-    nama: "Split-Bill Aplications",
-    desk: "Proyek Akhir Pelatihan Di CODEPOLITAN Membangun aplikasi spit bill berbasis web",
-    tools: ["Vite", "ReactJS", "Bootstrap", "JavaScript"],
-    dad: "500",
+    image: Menu4,
+    name: "Latte",
+    description: "Kopi ringan dengan susu steamed",
+    price: "Rp 18.000",
   },
   {
     id: 5,
-    gambar: Proyek5,
-    nama: "WEB Catatan Harian",
-    desk: "Tugas Kuliah Membangun Aplikasi WEB Catatan Harian",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
-    dad: "600",
+    image: Menu5,
+    name: "Americano",
+    description: "Espresso dengan tambahan air panas",
+    price: "Rp 16.000",
+  },
+  {
+    id: 6,
+    image: Menu6,
+    name: "Mochaccino",
+    description: "Kopi dengan cokelat dan susu",
+    price: "Rp 20.000",
+  },
+  {
+    id: 7,
+    image: Menu7,
+    name: "Affogato",
+    description: "Es krim vanilla disiram espresso",
+    price: "Rp 22.000",
+  },
+  {
+    id: 8,
+    image: Menu8,
+    name: "Cold Brew",
+    description: "Kopi diseduh dingin selama 8 jam",
+    price: "Rp 21.000",
+  },
+  {
+    id: 9,
+    image: Menu9,
+    name: "Es Kopi Susu",
+    description: "Kopi susu dingin untuk cuaca panas",
+    price: "Rp 18.000",
+  },
+  {
+    id: 10,
+    image: Menu10,
+    name: "Kopi Tubruk",
+    description: "Cara tradisional seduh kopi Indonesia",
+    price: "Rp 14.000",
+  },
+  {
+    id: 11,
+    image: Menu11,
+    name: "Es Kopi Hitam",
+    description: "Kopi hitam dingin tanpa gula",
+    price: "Rp 15.000",
+  },
+  {
+    id: 12,
+    image: Menu12,
+    name: "Cappuccino Dingin",
+    description: "Cappuccino versi es",
+    price: "Rp 18.000",
+  },
+  {
+    id: 13,
+    image: Menu13,
+    name: "Manual Brew",
+    description: "Kopi dengan metode V60 / French Press",
+    price: "Rp 19.000",
   },
 ];
