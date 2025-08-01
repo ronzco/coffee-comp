@@ -1,11 +1,11 @@
 const Lokasi = () => {
   return (
-    <section className="py-16 px-4 bg-white text-center" id="lokasi">
-      <h2 className="text-3xl text-black font-bold mb-4">📍 Lokasi Kami</h2>
-      <p className="mb-2 text-gray-700">
+    <section className="py-16 px-4 text-center" id="lokasi">
+      <h2 className="text-3xl text-white font-bold mb-4">📍 Lokasi Kami</h2>
+      <p className="mb-2 text-gray-200">
         Kunjungi kedai kopi kami dan rasakan langsung suasananya!
       </p>
-      <p className="mb-6 font-medium text-gray-600">
+      <p className="mb-6 font-medium text-gray-200">
         Jl. Kopi Sejati No. 123, Bandung, Indonesia
       </p>
 
@@ -22,7 +22,7 @@ const Lokasi = () => {
         href="https://goo.gl/maps/PetaKedai"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block mt-4 px-6 py-2 bg-primary text-black rounded-lg shadow hover:bg-opacity-90 transition"
+        className="inline-block mt-4 px-6 py-2 bg-gray-200 text-black rounded-lg shadow hover:bg-opacity-90 transition"
       >
         Lihat di Google Maps
       </a>
