@@ -10,7 +10,7 @@ const Footer = () => {
         <a href="#kontak">Kontak</a>
       </div>
       <div className="flex items-center gap-3 mt-4 md:mt-0">
-        <a href="https://instagram.com/ronzc01" aria-label="Instagram">
+        <a href="https://www.instagram.com/_ronzc0/" aria-label="Instagram">
           <i className="ri-instagram-fill ri-2x"></i>
         </a>
         <a href="https://wa.me/6281297481382" aria-label="WhatsApp">
